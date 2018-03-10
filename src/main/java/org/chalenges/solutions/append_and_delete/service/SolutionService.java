@@ -15,10 +15,11 @@ public class SolutionService {
 				break;
 		}
 
-		 if (((firstString.length() + secondString.length() - count) == k)||((k-(firstString.length() + secondString.length() - count))%2 == 0)
-				|| k >= (firstString.length() + secondString.length())||(count==(firstString.length() + secondString.length())&&k%2==0))
-			return "Yes";
-		else
-			return "No";
+		if((firstString.length() + secondString.length() - count) >k)
+			   return "No";
+			else if(((k-(firstString.length() + secondString.length() - count))%2 == 0)||k >= (firstString.length() + secondString.length()))
+				return "Yes";
+			else 
+				return "No";
 	}
 }

@@ -15,37 +15,37 @@ public class SolutionServiceTest {
 	@Autowired
 	private SolutionService service;
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase1() {
 		assertEquals(service.getResults("hackerhappy", "hackerrank", 9), "Yes");
 	}
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase2() {
 		assertEquals(service.getResults("aba", "aba", 7), "Yes");
 	}
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase3() {
 		assertEquals(service.getResults("abc", "aba", 7), "Yes");
 	}
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase4() {
 		assertEquals(service.getResults("ashley", "ash", 2), "No");
 	}
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase5() {
 		assertEquals(service.getResults("ashley", "ash", 5), "Yes");
 	}
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase6() {
 		assertEquals(service.getResults("abc", "abc", 2), "Yes");
 	}
 
-	@Test@Ignore
+	@Test
 	public void getResultsTestCase7() {
 		assertEquals(service.getResults(
 				"asdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcv",
